@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "frontend_safe": "file:frontend_safe"
+  }
+}

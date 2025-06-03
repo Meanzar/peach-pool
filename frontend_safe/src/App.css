@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,12 +9,162 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
+  padding: 20px;
 }
 
-.App-link {
+/* Home Component Styles */
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4fa8d1;
+}
+
+/* Vote Component Styles */
+.proposals-container {
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.proposals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.proposal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3f4b;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: background-color 0.2s;
+}
+
+.proposal-item:hover {
+  background-color: #444a59;
+}
+
+.proposal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.proposal-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.proposal-votes {
+  font-size: 0.9rem;
   color: #61dafb;
+}
+
+.vote-button {
+  background-color: #4caf50;
+  padding: 8px 16px;
+}
+
+.vote-button:hover {
+  background-color: #388e3c;
+}
+
+.cancel-vote-button {
+  background-color: #f44336;
+  margin-top: 20px;
+}
+
+.cancel-vote-button:hover {
+  background-color: #d32f2f;
+}
+
+.chart-button {
+  background-color: #ff9800;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.chart-button:hover {
+  background-color: #f57c00;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chart-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #61dafb;
+}
+
+.back-button {
+  background-color: #9e9e9e;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #757575;
+}
+
+.error-message {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #f44336;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #f44336;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.account-info {
+  background-color: rgba(97, 218, 251, 0.1);
+  color: #61dafb;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+}
+
+.voting-closed {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
