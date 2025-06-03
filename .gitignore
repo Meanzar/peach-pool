@@ -1,0 +1,34 @@
+# === Global OS/system files ===
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# === Backend: Hardhat ===
+backend_safe/node_modules/
+backend_safe/.env
+backend_safe/cache/
+backend_safe/artifacts/
+backend_safe/typechain/
+backend_safe/typechain-types/
+backend_safe/coverage/
+backend_safe/coverage.json
+backend_safe/ignition/deployments/chain-31337/
+
+# === Frontend: React (Vite or CRA) ===
+frontend_safe/node_modules/
+frontend_safe/.env
+frontend_safe/.env.*
+frontend_safe/build/        # CRA
+frontend_safe/dist/         # Vite
+frontend_safe/.vite/        # Vite cache
+
+# === Misc (just in case) ===
+node_modules/
