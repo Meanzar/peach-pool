@@ -3,19 +3,12 @@ import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
-  
-  const handleVoteClick = () => {
-    navigate('/vote');
-  };
 
   return (
     <header className="App-header">
-      <h1>Welcome to the Vote App</h1>
-      <p>
-        This is the voting app. The result are not rigged, i promise!
-        Okay, maybe a little bit.
-      </p>
-      <button onClick={handleVoteClick}>Vote Now</button>
+      <h1>Vote Pool</h1>
+      <p>Bienvenue sur l'application de vote décentralisée !</p>
+      <button onClick={() => navigate('/vote')}>Accéder au vote</button>
     </header>
   );
 }
